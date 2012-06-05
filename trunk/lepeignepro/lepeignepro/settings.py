@@ -1,7 +1,9 @@
 # Django settings for lepeignepro project.
 
+import os
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
+ROOT_PATH = os.path.dirname(__file__)
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
@@ -90,6 +92,14 @@ TEMPLATE_LOADERS = (
 #     'django.template.loaders.eggs.Loader',
 )
 
+TEMPLATE_CONTEXT_PROCESSORS = (
+  "django.core.context_processors.request",
+  "django.contrib.auth.context_processors.auth",
+  "django.core.context_processors.debug",
+  "django.core.context_processors.i18n",
+  "django.contrib.messages.context_processors.messages",
+)
+
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -118,6 +128,8 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'website',
+    'basehtml',
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
@@ -152,3 +164,7 @@ LOGGING = {
         },
     }
 }
+
+from django.template.loader import add_to_builtins
+add_to_builtins('django.templatetags.i18n')
+add_to_builtins('django.templatetags.static')

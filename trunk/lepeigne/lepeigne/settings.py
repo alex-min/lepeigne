@@ -1,4 +1,5 @@
 # Django settings for lepeigne project.
+import os
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -165,5 +166,6 @@ LOGGING = {
 }
 
 
+from django.template.loader import add_to_builtins
 add_to_builtins('django.templatetags.i18n')
 add_to_builtins('django.templatetags.static')

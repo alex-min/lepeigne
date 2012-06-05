@@ -2,6 +2,7 @@
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
+ROOT_PATH = os.path.dirname(__file__)
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
@@ -162,3 +163,7 @@ LOGGING = {
         },
     }
 }
+
+
+add_to_builtins('django.templatetags.i18n')
+add_to_builtins('django.templatetags.static')

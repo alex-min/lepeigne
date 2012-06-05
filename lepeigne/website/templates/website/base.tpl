@@ -3,6 +3,7 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
+	
 	<title>{% block title %}{%endblock%} - Le peigne</title>
 </head>
 <body>

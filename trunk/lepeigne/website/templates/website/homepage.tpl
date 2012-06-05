@@ -46,7 +46,7 @@
 	$(document).ready(function() {
 		$('#coin-slider').coinslider({ width: '100%', navigation: true, delay: 5000,	effect: '', spw:1, sph:1});
 	});
-	$("#cs-buttons-coin-slider").attr('style', '')
+	//$("#cs-buttons-coin-slider").attr('style', '')
 </script>
 
 

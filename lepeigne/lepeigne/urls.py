@@ -5,7 +5,8 @@ from django.conf.urls import patterns, include, url
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-	url(r'^$', 'website.views.homepage', name='home')
+	url(r'^$', 'website.views.homepage', name='home'),
+	url(r'^region/(?P<regionid>\d+)/.*', 'website.views.region', name='region'),
     # Examples:
     # url(r'^$', 'lepeigne.views.home', name='home'),
     # url(r'^lepeigne/', include('lepeigne.foo.urls')),

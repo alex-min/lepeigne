@@ -7,6 +7,8 @@ from django.conf.urls import patterns, include, url
 urlpatterns = patterns('',
 	url(r'^$', 'website.views.homepage', name='home'),
 	url(r'^region/(?P<regionid>\d+)/.*', 'website.views.region', name='region'),
+	url(r'^coiffeur/(?P<coiffeurid>\d+)/.*', 'website.views.coiffeur', name='coiffeur'),
+
     # Examples:
     # url(r'^$', 'lepeigne.views.home', name='home'),
     # url(r'^lepeigne/', include('lepeigne.foo.urls')),

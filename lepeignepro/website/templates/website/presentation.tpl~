@@ -1,0 +1,8 @@
+{% extends "website/base.tpl" %}
+
+{%block title%}Accueil{%endblock%}
+
+{% block content %}
+
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "website/base.tpl" %}
+
+{%block title%}Accueil{%endblock%}
+
+{% block content %}
+
+<div class="offerspage">
+     <h2>Souscription en 5 minutes. Vous pouvez changer d'offre ou vous désinscrire à tout moment.</h2>
+
+     <div class="offerleft">
+     	  <div class="titleoffer">
+     	       <h2>Free<br/>Gratuit à vie</h2>
+	       <p>Hors frais de réservation *</p>
+	  </div>
+	  <p>Augmentez votre CA</p>
+	  <ul>
+		<li>Référencement de votre restaurant sur LaFourchette.com et ses partenaires</li>
+	  </ul>
+     </div>
+
+     <div class="offerright">
+lol
+     </div>
+</div>
+
+{% endblock %}

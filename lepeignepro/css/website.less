@@ -1,0 +1,62 @@
+@import "toolkit";
+@bordercolor:#87698c;
+@lightgrey:#888888;
+
+body {
+	margin: 60px 5% 0px 5%;
+	z-index:-1;
+	p {
+		color: #87698c;
+		font-size: 15px;
+		margin: 6px 0px 6px 4px;
+	}
+	a {
+	color: #87698c;
+	text-decoration:underline;
+	font-style:bold;
+	  &:hover {
+	  	color: #2549AA;
+	  }
+	}
+
+	h1 {
+
+	}
+
+	.coin-slider {
+		margin-top:30px;
+		.border-radius(0px 4px 4px 4px);
+		border: 1px solid @bordercolor;
+	}
+
+
+	.header-regionmenu {
+		position: absolute;
+		z-index:100;
+		.header-regionmenuarrow {
+			background: lighten(#7e5b82, 20%);
+			.inline-block();
+			padding: 0px 5px 5px 5px;
+			color:white;
+			.border-radius(5px 5px 0px 0px);
+			border: 1px solid @bordercolor;
+			&:hover > .header-list {
+				display:block;
+			} 
+		}
+		.header-list {
+			background: #f0e7e8;
+			overflow: hidden;
+			border: 1px solid @bordercolor;
+			display:none;
+			z-index:100;
+			margin:0px;
+			.border-radius(0px 4px 4px 4px);
+			.header-region {
+				float:left;
+				list-style-type:none;
+				padding-right: 20px;
+			}
+		}
+	}
+}

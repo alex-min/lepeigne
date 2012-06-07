@@ -17,9 +17,10 @@
 		<li><strong>Référencement de votre salon sur RezaBella.com</strong> et ses partenaires</li>
 		<li><strong>Cahier éléctronique de réservation :</strong> remplace votre cahier de réservation papier</li>
 		<li><strong>Module de réservation</strong> en temps réel sur votre site Internet</li>
-		<br/><br/>
 	  </ul>
+
      </div>
+
 
      <div class="offerright">
      	  <div class="titleoffer">
@@ -36,6 +37,9 @@
 	  </ul>
 
      </div>
+	<a class="buttonlink" title="inscription" href="">Inscription Gratuite</a>
+	<a class="buttonlink2" title="inscription" href="">Inscription Gratuite</a>
+
 </div>
 
 <div class="optionblock">

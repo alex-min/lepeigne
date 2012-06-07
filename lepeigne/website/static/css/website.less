@@ -71,10 +71,19 @@
 	font-size:1.1em;
 }
 
+.coiffeur-coiffeur-infoblock {
+	.coiffeur-bookit {
+		float:right;
+		padding:0.5em 1em 0.5em 1em;
+	}
+}
+
 .coiffeur-coiffeurlink {
 		h3 {
 			font-size:2.4em;
-		font-family:Georgia,Times,'Times New Roman';
+			font-family:Georgia,Times,'Times New Roman';
+			.inline-block();
+			margin-top: 0.5em;
 		}
 		color:black;
 		text-decoration:none !important;
@@ -229,7 +238,6 @@ body {
 					.region-coiffeurlink {
 						h3 {
 							color:#000;
-							text-align:center;
 						}
 						display: block;
 						list-style-type: circle;
@@ -270,6 +278,48 @@ body {
 				width:100%;
 				overflow: hidden;
 		}
+	}
+}
+
+section {overflow: hidden;}
+.coiffeur-tabservice {
+	min-width:18em;
+	float:right;
+	background:url(/static/img/grid.png)  repeat scroll 0 0 transparent;
+	border-bottom:none;
+	margin-top: 5%;
+	border-top:0.1em solid #676767;
+	border-bottom: 0.1em solid rgba(50,50,50,0.08);
+	border-left: 0.1em solid rgba(50,50,50,0.08);
+	border-right: 0.1em solid rgba(50,50,50,0.08);
+	padding:0px 0px 5% 0px;
+	width: 30%;
+	h1 {
+		color:#fff;
+		background: none repeat scroll 0 0 #676767;
+		.inline-block();
+		padding: 0.4% 0.8% 0.4% 0.8%;
+		font-size:1.2em;
+		font-weight:normal;
+	}
+}
+
+.coiffeur-tab {
+	min-width:40em;
+	.inline-block();
+	border-top:0.1em solid #676767;
+	background:none;
+	border-bottom:none;
+	margin-top: 5%;
+	padding:0;
+	width: 60%;
+	h1 {
+		color:#fff;
+		background: none repeat scroll 0 0 #676767;
+		.inline-block();
+		padding: 0.4% 0.8% 0.4% 0.8%;
+		font-size:2.2em;
+		font-weight:normal;
 	}
 }
 

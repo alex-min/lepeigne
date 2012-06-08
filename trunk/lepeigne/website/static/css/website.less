@@ -12,7 +12,7 @@
 	box-shadow:0 0 10px #147167 inset;
 	text-align:center;
 	text-transform:uppercase;
-	padding: 3px 3px 3px 3px;
+	padding: 0.3em;
 	font-size:0.9em;
 	margin-bottom: 30px;
 	&:hover {
@@ -31,7 +31,7 @@
 	box-shadow:0 0 3px #05453C inset;
 	text-align:center;
 	text-transform:uppercase;
-	padding: 3px 3px 3px 3px;
+	padding: 0.3em;
 	font-size:0.9em;
 	margin-bottom: 30px;
 	&:hover {
@@ -72,6 +72,12 @@
 }
 
 .coiffeur-coiffeur-infoblock {
+	margin-top: 0.5em;
+	.coiffeur-coiffeurtown {
+		background: none repeat scroll 0 0 lighten(#888888, 35%);
+		border: 1px solid rgba(100,100,100,0.1);
+		padding: 0.2em;
+	}
 	.coiffeur-bookit {
 		float:right;
 		padding:0.5em 1em 0.5em 1em;
@@ -210,7 +216,8 @@ body {
 		border: 1px solid @lightgrey;
 		.border-radius(0px 4px 4px 4px);
 		box-shadow:0 0 3px #05453C inset;
-		padding: 20px 3% 0px 3%;
+		padding: 20px 3% 3% 3%;
+		overflow: hidden;
 		.region-path {
 			background-color: #d0d0d0;
 			.border-radius(4px);
@@ -283,8 +290,25 @@ body {
 
 section {overflow: hidden;}
 .coiffeur-tabservice {
+		font-family:'Palatino Linotype','Book Antiqua',Palatino,serif;
+	td {
+	 	padding:0.1em 0.3em 0.1em 0.3em;
+	}
+	table {
+		margin-left: 6% !important;
+		margin-top: 10%;
+	}
+	ul,p,table {
+		font-size:1.3em;
+		color:#676767;
+		margin-left:5%;
+	}
+	ul {
+		margin-top:5%;
+		list-style-type:none;
+	}
+	float:left;
 	min-width:18em;
-	float:right;
 	background:url(/static/img/grid.png)  repeat scroll 0 0 transparent;
 	border-bottom:none;
 	margin-top: 5%;
@@ -298,13 +322,21 @@ section {overflow: hidden;}
 		color:#fff;
 		background: none repeat scroll 0 0 #676767;
 		.inline-block();
-		padding: 0.4% 0.8% 0.4% 0.8%;
-		font-size:1.2em;
+		padding: 0.4% 2.5% 0.4% 2.5%;
+		font-size:1.6em;
 		font-weight:normal;
+		font-family:georgia, sans-serif;
+	}
+
+	p {
+		font-family: Georgia, sans-serif;
+		font-size:1.3em;
 	}
 }
 
 .coiffeur-tab {
+	font-family:georgia, sans-serif;
+	float:left;
 	min-width:40em;
 	.inline-block();
 	border-top:0.1em solid #676767;
@@ -313,12 +345,13 @@ section {overflow: hidden;}
 	margin-top: 5%;
 	padding:0;
 	width: 60%;
+	margin-right: 5%;
 	h1 {
 		color:#fff;
 		background: none repeat scroll 0 0 #676767;
 		.inline-block();
 		padding: 0.4% 0.8% 0.4% 0.8%;
-		font-size:2.2em;
+		font-size:1.6em;
 		font-weight:normal;
 	}
 }
@@ -381,7 +414,7 @@ section {overflow: hidden;}
 
 header {
 	a {float:left; width:23%; min-width:200px;margin-left:0%}
-	p {float:left; max-width:40%;}
+	p {float:left; max-width:40%;min-width:10em !important}
 	form {float:left !important; margin-left:2%}
 	overflow: hidden;
 	background: #f1f1ee;
@@ -441,4 +474,39 @@ form {
 		margin-right:10px;
 		float:left;
 	}
+}
+
+.coiffeur-services {
+	color:#999999;
+	margin-top: 5%;
+	width:100%;
+	font-size:1.4em;
+	font-family:'Palatino Linotype','Book Antiqua',Palatino,serif;
+		thead {
+			tr {
+				td {
+					padding-bottom:2%;
+					border-bottom: 0.1em solid #666666;
+				}
+			}
+		}
+		tbody {
+			tr {
+				border-bottom: 0.1em solid lighten(#666666, 30%);
+				td {
+					color: #000;
+					a {
+						display:inline !important;
+						min-width: 5em !important;
+						margin: 0 !important;
+					}
+				}
+				height : 4em;
+			}
+		}
+}
+
+.coiffeur-ratebar {
+	margin:auto;
+	display:block;
 }

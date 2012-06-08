@@ -80,6 +80,7 @@
 
 		</div>
 	</footer>
+	<script type="text/javascript">$("img,a").mousedown(function(){return false;});</script>
 </body>
 </html>
 {%endspaceless%}

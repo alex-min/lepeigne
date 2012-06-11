@@ -25,7 +25,7 @@
 		</ul>
 	</div>
 </div>
-<div style="float:left">
+<div style="float:left;width:80%">
 <div id="coin-slider">
 	<a href="img01_url" target="_blank">
 		<img class="sliderimg" src="/static/img/slider1.jpg" alt="slider1" />

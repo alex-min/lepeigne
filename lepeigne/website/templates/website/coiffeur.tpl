@@ -5,7 +5,29 @@
 {% block content %}
 <div class="region-body">
 
-<section role="main">
+<div class="coiffeur-leftinfo">
+<div class="coiffeur-infos">
+	<h2>Top Coiffeurs</h2>
+	<ul alt="Choix des coiffeurs par categorie">
+	<li>Les mieux notés</li>
+    <li>Les plus réservés</li>
+    <li>Par type de coiffure</li>
+    <li>Par prix</li>
+</ul>
+</div>
+<img src="/static/img/apps.png" alt="apps" width="100%" style="border-radius:10px;border: 1px solid #888888; width:11.5em">
+<div class="coiffeur-infos" style="width:11em !important; margin-top:3%;background-color:#eeeeee">Quartier / Lieux remarquables
+</div>
+	<div class="coiffeur-regionchoice">
+		<h3>France</h3>
+		<ul class="header-region">
+				{% for region in regions %}
+					<li class=""><a href="/region/{{region.id}}/{{region.name|slugify}}" title="{{region.name}}">{{region.name}}</a></li>
+				{%endfor%}
+		</ul>
+	</div>
+</div>
+<section role="main" class="coiffeur-main">
 	<div class="coiffeur-textsize">
 					<div class="goodbg"><a class="beautybutton thumbnail" href="/coiffeur/{{coif.id}}/{{coif.name|slugify}}"><img src="/static/img/thumb-chuck.jpg" alt="{{coif.name}} thumbnail"></a>
 					<div class="coiffeur-coiffeurinfo">

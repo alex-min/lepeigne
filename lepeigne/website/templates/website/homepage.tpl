@@ -3,6 +3,7 @@
 {%block title%}Acceuil{%endblock%}
 
 {% block content %}
+<div style="overflow:hidden">
 <div class="coiffeur-leftinfo">
 <div class="coiffeur-infos">
 	<h2>Top Coiffeurs</h2>
@@ -26,6 +27,13 @@
 	</div>
 </div>
 <div style="float:left;width:80%">
+	<div class="homepage-ville">
+		Inscrivez-vous pour profiter de nos offres en avant-première
+meilleurs salons
+	<a class="btn btn-primary">
+		Choisissez votre Ville
+	</a>
+	</div>
 <div id="coin-slider">
 	<a href="img01_url" target="_blank">
 		<img class="sliderimg" src="/static/img/slider1.jpg" alt="slider1" />
@@ -34,8 +42,7 @@
 		<img class="sliderimg" src="/static/img/slider2.jpg" alt="slider1" />
 	</a>
 </div>
-<div style="clear:both;position:relative;top:2em">
-{% include "website/searchbar.tpl" %}
+<div style="clear:both;position:relative;top:2em; margin-bottom:4%">
 </div>
 </div>
 </div>
@@ -70,6 +77,7 @@
     <a href="#" class="btn btn-primary">Envoyer</a>
   </div>
 </div>
+</div>
 <script>
 if (document.cookie.indexOf("modal") == -1) {
 	document.cookie = 'modal=yes; expires=Fri, 01 Jan 2030 00:0:00 UTC; path=/'
@@ -77,5 +85,6 @@ if (document.cookie.indexOf("modal") == -1) {
 }
 
 </script>
+
 {%endblock%}
 

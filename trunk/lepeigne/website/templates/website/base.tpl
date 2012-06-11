@@ -11,8 +11,6 @@
 	<script src="{% get_static_prefix %}js/less.js" type="text/javascript"></script>
 	<script src="{% get_static_prefix %}js/modals.js" type="text/javascript"></script>
 	<title>{% block title %}{%endblock%} - Le Peigne</title>
-	<link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div class="body">

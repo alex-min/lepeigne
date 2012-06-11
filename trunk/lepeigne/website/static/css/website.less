@@ -3,6 +3,11 @@
 @lightgrey:#888888;
 @beautyblue: #3DB0A4;
 
+.header-regionmenuarrow {
+	background: #20AB9C;
+	
+}
+
 .beautygreen {
 	background-color: #20AB9C;
 	color: #fff;
@@ -100,8 +105,8 @@
 
 body {
 	#homepage-signup {
+		clear:both;
 		display:block;
-		margin-top:3em;
 		border-bottom:1px dashed #959595;
 		border-top:1px dashed #959595;
 		color:#959595;
@@ -169,8 +174,9 @@ body {
 
 	#coin-slider-coin-slider {
 		overflow: visible !important;
+		width:907px !important;
+		float:left;
 		#coin-slider {
-			margin-top:30px;
 			.border-radius(0px 4px 4px 4px);
 			border: 1px solid @bordercolor;
 		}
@@ -182,7 +188,7 @@ body {
 		z-index:100;
 		.header-regionmenuarrow {
 			box-shadow: 3px 3px 4px rgba(0,0,0,0.3);
-			background: lighten(#7e5b82, 20%);
+			background: #20AB9Clighten(#7e5b82, 20%);
 			.inline-block();
 			padding: 0px 5px 5px 5px;
 			color:white;
@@ -214,10 +220,10 @@ body {
 		margin-bottom:35px;
 	}
 
-	.region-body {
+
 		.coiffeur-infos {
 			background:#fff;
-			border-radius: 4px;
+			.border-radius(0px 4px 4px 4px);
 			border: 1px solid lighten(#888888, 20%);
 			margin-right: 1%;
 			margin-bottom:3%;
@@ -234,6 +240,7 @@ body {
 				}
 			}
 		}
+		.region-body {
 		background: #f0e7e8;
 		border: 1px solid @lightgrey;
 		.border-radius(0px 4px 4px 4px);
@@ -470,6 +477,19 @@ form {
 	box-shadow:0 0 1px #000000 inset;
 	padding: 2% 2% 0% 2%;
 	.border-radius(4px);
+background-image: linear-gradient(bottom, #B5C7AF 0%, #CFE0C9 73%);
+background-image: -o-linear-gradient(bottom, #B5C7AF 0%, #CFE0C9 73%);
+background-image: -moz-linear-gradient(bottom, #B5C7AF 0%, #CFE0C9 73%);
+background-image: -webkit-linear-gradient(bottom, #B5C7AF 0%, #CFE0C9 73%);
+background-image: -ms-linear-gradient(bottom, #B5C7AF 0%, #CFE0C9 73%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, #B5C7AF),
+	color-stop(0.73, #CFE0C9)
+);
 	label {
 		span {
 			display:none;
@@ -538,6 +558,7 @@ form {
 	overflow: hidden;
 	margin-right: 1%;
 	padding-right:1%;
+	margin-bottom:2%;
 }
 
 .coiffeur-regionchoice {

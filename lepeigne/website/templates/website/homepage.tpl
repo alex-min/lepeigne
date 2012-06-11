@@ -48,6 +48,7 @@
 </script>
 
 
+</div>
 <div id="homepage-signup">
 		<h2><span>Are</span> you a <span>professional</span> ? Rezabella is <span>free!</span></h2>
 		<a class="beautygreen homepage-signupbutton" href="/">SIGNUP</a>

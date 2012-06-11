@@ -9,3 +9,6 @@ def presentation(request):
 
 def offrestarifs(request):
 	return render_to_response('website/offres-tarifs.tpl')
+
+def inscription(request):
+	return render_to_response('website/inscription.tpl')

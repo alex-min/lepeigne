@@ -24,7 +24,7 @@
 				 <li class="active"><a title=Accueil" href="/">Accueil</a></li>
 				 <li><a title="Présentation" href="/presentation">Présentation</a></li>
 				 <li><a title="Offres & Tarifs" href="/offrestarifs">Offres & Tarifs</a></li>
-				 <li><a title="Inscription" href="">Inscription</a></li>
+				 <li><a title="Inscription" href="/inscription">Inscription</a></li>
 			     </ul>
 		      </div>
 		</div>

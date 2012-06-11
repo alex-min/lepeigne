@@ -17,8 +17,33 @@
   src: local('Niconne'), local('Niconne-Regular'), url('https://themes.googleusercontent.com/static/fonts/niconne/v3/Pt5YCk9yiMzehxqMoOcZoQ.woff') format('woff');
 }
 
+.cs-prev,.cs-next {display:none}
+
+.opacity (@param) {
+	opacity: @param;
+	-moz-opacity: @param;
+	-webkit-opacity: @param;
+	-o-opacity: @param;
+	-ms-opacity: @param;
+	filter:alpha(opacity=@param);
+}
 
 
+.homepage-ville {
+	position: absolute;
+	z-index:99;
+	width:30%;
+	min-width: 3em;
+	font-size:2em;
+	line-height: 1.2em;
+	background: #fff;
+	.opacity(0.8);
+	margin:1% 0px 0px 1%;
+	padding: 1%;
+	.border-radius(1%);
+	a {display:block;
+		margin:2%}
+}
 .header-newsletterform {
 background-image: linear-gradient(bottom, rgb(216,213,217) 42%, rgb(204,204,204) 71%);
 background-image: -o-linear-gradient(bottom, rgb(216,213,217) 42%, rgb(204,204,204) 71%);

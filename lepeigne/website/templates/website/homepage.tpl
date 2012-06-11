@@ -3,7 +3,29 @@
 {%block title%}Acceuil{%endblock%}
 
 {% block content %}
-
+<div class="coiffeur-leftinfo">
+<div class="coiffeur-infos">
+	<h2>Top Coiffeurs</h2>
+	<ul alt="Choix des coiffeurs par categorie">
+	<li>Les mieux notés</li>
+    <li>Les plus réservés</li>
+    <li>Par type de coiffure</li>
+    <li>Par prix</li>
+</ul>
+</div>
+<img src="/static/img/apps.png" alt="apps" width="100%" style="border-radius:10px;border: 1px solid #888888; width:11.5em">
+<div class="coiffeur-infos" style="width:11em !important; margin-top:3%;background-color:#eeeeee">Quartier / Lieux remarquables
+</div>
+	<div class="coiffeur-regionchoice">
+		<h3>France</h3>
+		<ul class="header-region">
+				{% for region in regions %}
+					<li class=""><a href="/region/{{region.id}}/{{region.name|slugify}}" title="{{region.name}}">{{region.name}}</a></li>
+				{%endfor%}
+		</ul>
+	</div>
+</div>
+<div style="float:left">
 <div id="coin-slider">
 	<a href="img01_url" target="_blank">
 		<img class="sliderimg" src="/static/img/slider1.jpg" alt="slider1" />
@@ -12,6 +34,12 @@
 		<img class="sliderimg" src="/static/img/slider2.jpg" alt="slider1" />
 	</a>
 </div>
+<div style="clear:both;position:relative;top:2em">
+{% include "website/searchbar.tpl" %}
+</div>
+</div>
+</div>
+<div style="clear:both"></div>
 <script type="text/javascript">
 	$(document).ready(function() {
 		$('#coin-slider').coinslider({ width: '100%', navigation: true, delay: 5000,	effect: '', spw:1, sph:1});

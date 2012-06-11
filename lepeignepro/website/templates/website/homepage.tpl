@@ -4,7 +4,7 @@
 
 {% block content %}
 
-
+<div>
 <!-- left column -->
 <div class="leftcolumn">
 
@@ -46,7 +46,7 @@
 		<h2>Je n'ai pas encore de compte</h2>
 		<a title="presentation" href="/presentation">lePeigne, c'est quoi ?</a>
 		<div class="buttonlink">
-			<a title="inscription" href="">Inscription Gratuite</a>
+			<a class="beautybutton" title="inscription" href="">Inscription Gratuite</a>
 		</div>
 		
 		<ul>
@@ -61,10 +61,12 @@
 	<li>
 		<h2>Je n'ai pas encore de compte</h2>
 		<div class="buttonlink">
-			<a title="connection" href="">Se connecter</a>
+			<a class="beautybutton" title="connection" href="">Se connecter</a>
 		</div>
 	</li>
      </ul>
+</div>
+
 </div>
 
 {%endblock%}

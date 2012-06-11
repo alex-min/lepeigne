@@ -10,7 +10,6 @@
      <div class="offerleft">
      	  <div class="titleoffer">
      	       <h2>FREE<br/>Gratuit à vie</h2>
-	       <p>Hors frais de réservation *</p>
 	  </div>
 	  <h4>Augmentez votre CA</h4>
 	  <ul>
@@ -25,7 +24,6 @@
      <div class="offerright">
      	  <div class="titleoffer">
      	       <h2>PRO<br/>Juste 49€ / mois</h2>
-	       <p>Hors frais de réservation *</p>
 	  </div>
 
 	  <h4>Optimisez la gestion de vos réservations</h4>
@@ -37,8 +35,8 @@
 	  </ul>
 
      </div>
-	<a class="buttonlink" title="inscription" href="">Inscription Gratuite</a>
-	<a class="buttonlink2" title="inscription" href="">Inscription Gratuite</a>
+	<a class="buttonlink beautybutton" title="inscription" href="">Je m'inscris</a>
+	<a class="buttonlink2 beautybutton" title="inscription" href="">Je m'inscris</a>
 
 </div>
 

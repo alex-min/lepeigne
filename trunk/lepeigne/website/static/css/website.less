@@ -41,6 +41,9 @@
 	}
 }
 
+.coiffeur-main {
+	min-width: 15em;
+}
 .coiffeur-textsize {
 	.coiffeur-coiffeurinfo {
 		div {
@@ -212,11 +215,30 @@ body {
 	}
 
 	.region-body {
+		.coiffeur-infos {
+			background:#fff;
+			border-radius: 4px;
+			border: 1px solid lighten(#888888, 20%);
+			margin-right: 1%;
+			margin-bottom:3%;
+			padding-left:5%;
+			min-width:10em;
+			h2 {
+				font-size:1.2em;
+			}
+			ul {
+				list-style-type:none;
+				margin-left:0;
+				li {
+				border-bottom: 1px solid lighten(black,80%);
+				}
+			}
+		}
 		background: #f0e7e8;
 		border: 1px solid @lightgrey;
 		.border-radius(0px 4px 4px 4px);
 		box-shadow:0 0 3px #05453C inset;
-		padding: 20px 3% 3% 3%;
+		padding: 20px 3% 1% 1%;
 		overflow: hidden;
 		.region-path {
 			background-color: #d0d0d0;
@@ -509,4 +531,27 @@ form {
 .coiffeur-ratebar {
 	margin:auto;
 	display:block;
+}
+
+.coiffeur-leftinfo {
+	float:left;
+	overflow: hidden;
+	margin-right: 1%;
+	padding-right:1%;
+}
+
+.coiffeur-regionchoice {
+	background: #ffffff;
+	.border-radius(4px);
+	border: 1px solid lighten(#888888, 20%);
+	margin-right: 1%;
+	margin-bottom:3%;
+	padding-left:5%;
+	padding-right:5%;
+	min-width:10em;
+	ul {
+		font-size:80%;
+		list-style-type:none;
+		margin:0;
+	}
 }

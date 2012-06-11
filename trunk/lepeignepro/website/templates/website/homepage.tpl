@@ -46,7 +46,7 @@
 		<h2>Je n'ai pas encore de compte</h2>
 		<a title="presentation" href="/presentation">lePeigne, c'est quoi ?</a>
 		<div class="buttonlink">
-			<a class="beautybutton" title="inscription" href="">Inscription Gratuite</a>
+			<a class="beautybutton" title="inscription" href="/inscription">Inscription Gratuite</a>
 		</div>
 		
 		<ul>

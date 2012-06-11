@@ -233,6 +233,7 @@ body {
 
 
 	.header-regionmenu {
+
 		position: absolute;
 		z-index:100;
 		margin-left:2%;
@@ -242,6 +243,7 @@ body {
 			.header-list {
 				font-size:0.7em;
 				margin-top:0.7em;
+				box-shadow:0 0 0.2em #000000 inset;
 			}
 			box-shadow: 3px 3px 4px rgba(0,0,0,0.3);
 			.inline-block();
@@ -250,6 +252,21 @@ body {
 			color:white;
 			.border-radius(5px 5px 0px 0px);
 			border: 1px solid @bordercolor;
+background-image: linear-gradient(bottom, rgb(17,194,150) 20%, rgb(56,163,140) 53%);
+background-image: -o-linear-gradient(bottom, rgb(17,194,150) 20%, rgb(56,163,140) 53%);
+background-image: -moz-linear-gradient(bottom, rgb(17,194,150) 20%, rgb(56,163,140) 53%);
+background-image: -webkit-linear-gradient(bottom, rgb(17,194,150) 20%, rgb(56,163,140) 53%);
+background-image: -ms-linear-gradient(bottom, rgb(17,194,150) 20%, rgb(56,163,140) 53%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.2, rgb(17,194,150)),
+	color-stop(0.53, rgb(56,163,140))
+);
+
+
 			&:hover > .header-list {
 				display:block;
 			} 
@@ -262,7 +279,18 @@ body {
 			z-index:100;
 			margin:0px;
 			.border-radius(0px 4px 4px 4px);
+			p {
+				color:black;
+				font-size:1.2em;
+				margin:1em;
+			}
 			.header-region {
+				li {
+					a {
+						color:black;
+						text-decoration:none;
+					}
+				}
 				float:left;
 				list-style-type:none;
 				border-right: 1px solid @bordercolor;
@@ -273,7 +301,7 @@ body {
 
 
 	.header-aftermenu {
-		margin-bottom:35px;
+		margin-bottom:3%;
 	}
 
 
@@ -299,7 +327,7 @@ body {
 		.region-body {
 		background: #f0e7e8;
 		border: 1px solid @lightgrey;
-		.border-radius(0px 4px 4px 4px);
+		.border-radius(3% 0.4% 2% 2%);
 		box-shadow:0 0 3px #05453C inset;
 		padding: 20px 3% 1% 1%;
 		overflow: hidden;
@@ -499,11 +527,12 @@ section {overflow: hidden;}
 
 
 .body {
-	header {
+	header.h {
 		position : relative;
 		top: -0.2em;
-		left: 0.2em;
+		left: -0.2em;
 		padding-bottom: 2.2em;
+		width:100.5%;
 	}
 }
 

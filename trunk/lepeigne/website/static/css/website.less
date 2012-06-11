@@ -3,6 +3,23 @@
 @lightgrey:#888888;
 @beautyblue: #3DB0A4;
 
+
+.header-newsletterform {
+background-image: linear-gradient(bottom, rgb(216,213,217) 42%, rgb(204,204,204) 71%);
+background-image: -o-linear-gradient(bottom, rgb(216,213,217) 42%, rgb(204,204,204) 71%);
+background-image: -moz-linear-gradient(bottom, rgb(216,213,217) 42%, rgb(204,204,204) 71%);
+background-image: -webkit-linear-gradient(bottom, rgb(216,213,217) 42%, rgb(204,204,204) 71%);
+background-image: -ms-linear-gradient(bottom, rgb(216,213,217) 42%, rgb(204,204,204) 71%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.42, rgb(216,213,217)),
+	color-stop(0.71, rgb(204,204,204))
+);
+}
+
 .sliderimg {
 	width:100%;
 }
@@ -167,6 +184,10 @@ body {
 		float:right;
 		width:30%;
 		min-width:17em;
+		legend {
+			font-family: Niconne;
+		font-size:2.5em;
+		}
 		label {
 			width:33%;
 			display:block;
@@ -504,6 +525,9 @@ background-image: -webkit-gradient(
 		}
 	}
 	fieldset {
+		legend {
+			font-family: Niconne; 		font-size:2.5em;
+		}
 		input,select {
 			display:block;
 		}

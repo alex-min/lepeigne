@@ -14,7 +14,7 @@
 </head>
 <body>
 	<div class="body">
-	<header>
+	<header class="h">
 		<a href="/" alt="Go Home" title="home">
 		<h1>Le Peigne</h1>
 		<img src="/static/img/logo.png" alt="RezaBella logo" title="logo" />

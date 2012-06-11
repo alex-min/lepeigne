@@ -26,5 +26,27 @@
 
 </div>
 
+<div class="modal hide" id="myModal">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    <h3>Inscription à notre newsletter</h3>
+  </div>
+  <div class="modal-body">
+    <p style="margin-bottom: 5%">Inscrivez-vous à la newsletter de RezaBella.com afin de profiter de toutes nos promotions</p>
+    <label style="float:left; margin-right:5%; font-size:100%;margin-top:0.3em;" for="email">Votre email</label>
+    <input type="email" name="email" value="" placeholder="email">
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">Fermer</a>
+    <a href="#" class="btn btn-primary">Envoyer</a>
+  </div>
+</div>
+<script>
+if (document.cookie.indexOf("modal") == -1) {
+	document.cookie = 'modal=yes; expires=Fri, 01 Jan 2030 00:0:00 UTC; path=/'
+	$('#myModal').modal();
+}
+
+</script>
 {%endblock%}
 

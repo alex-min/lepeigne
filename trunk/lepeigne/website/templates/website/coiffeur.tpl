@@ -48,7 +48,7 @@
 						<a class="beautybutton coiffeur-bookit" href="/coiffeur/{{coif.id}}/{{coif.name|slugify}}">RESERVER</a>
 					</div>
 			</div>
-			<p>Bon7,9/103369 avis</p>
+			<div style="margin-bottom:3%"></div>
 			<img class="coiffeur-ratebar" src="/static/img/ratebar.png" alt="Notation du coiffeur" title="Notation du coiffeur" />
 </section>
 <section>

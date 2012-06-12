@@ -42,7 +42,23 @@ meilleurs salons
 		<img class="sliderimg" src="/static/img/slider2.jpg" alt="slider1" />
 	</a>
 </div>
-<div style="clear:both;position:relative;top:2em; margin-bottom:4%">
+<div class="homepage-imgpannel" style="clear:both;position:relative;top:2em; margin-bottom:4%">
+	<div class="map">
+	<h2>Choisissez votre région</h2>
+	<img src="/static/img/carte.png" alt="Carte de france">
+	</div>
+	<div class="rassure">
+	<h2>RezaBella s'engage</h2>
+	<ul>
+    <li><span>6000 salons</span> dont 1500 en promotion</li>
+    <li><span>450 000 avis</span> pour toujours faire le bon choix</li>
+    <li>Réservation en 3 clics avec confirmation <span>immédiate</span> par sms</li>
+    <li><span>Gratuit</span> ni prépaiement, ni carte bleue</li>
+    <li>Déjà plus de <span>8 millions</span> de réservations</li>
+    </ul>
+    <a href="/" class="btn btn-primary">En savoir plus</a>
+    <img src="/static/img/boutons.png" style="margin-top:8%; margin-left:5%">
+	</div>
 </div>
 </div>
 </div>

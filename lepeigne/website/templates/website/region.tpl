@@ -22,7 +22,13 @@
 		<li>
 			<div class="region-textsize">
 				<a class="region-coiffeurlink" href="/coiffeur/{{coif.id}}/{{coif.name|slugify}}"><h3>{{coif.name}}</h3></a>
-				<a class="beautybutton thumbnail" href="/coiffeur/{{coif.id}}/{{coif.name|slugify}}"><img src="/static/img/thumb-chuck.jpg" alt="{{coif.name}} thumbnail"></a>
+				<a class="beautybutton thumbnail" href="/coiffeur/{{coif.id}}/{{coif.name|slugify}}">
+					{% if forloop.first %}
+					<img src="/static/img/thumb-chuck.jpg" alt="{{coif.name}} thumbnail">
+					{% else %}
+					<img src="/static/img/i2.png" alt="{{coif.name}} thumbnail">
+					{% endif %}
+				</a>
 				<div class="region-coiffeur-infoblock">
 					<span class="region-coiffeurtown">{{coif.town}}</span>
 					<div class="region-coiffeur-rating rating_bar_stars">

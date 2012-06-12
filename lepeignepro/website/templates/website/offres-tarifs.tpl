@@ -13,6 +13,7 @@
 	  </div>
 	  <h4>Augmentez votre CA</h4>
 	  <ul>
+		<li>Votre <strong>espace personnalisé</strong> sur RezaBella.com</li>
 		<li><strong>Référencement de votre salon sur RezaBella.com</strong> et ses partenaires</li>
 		<li><strong>Cahier éléctronique de réservation :</strong> remplace votre cahier de réservation papier</li>
 		<li><strong>Module de réservation</strong> en temps réel sur votre site Internet</li>
@@ -28,10 +29,12 @@
 
 	  <h4>Optimisez la gestion de vos réservations</h4>
 	  <ul>
-		<li><strong>Référencement de votre salon sur RezaBella.com</strong> et ses partenaires</li>
-		<li><strong>Cahier intelligent de réservation : </strong> plan de salle, personnalisation, gestion des prescripteurs</li>
-		<li><strong>Module de réservation</strong> en temps réel sur votre site Internet</li>
+		<li><strong>Toutes vos options</strong> de la version gratuite</li>
 		<li><strong>Gestion multi-utilisateurs :</strong> suivi des actions, gestion des droits...</li>
+		<li>Création automatique de <strong>base de données</strong></li>
+		<li>Restez en contact avec vos clients par <strong>Email et SMS</strong></li>
+		<li><strong>Enquête de statisfaction</strong> automatique</li>
+		<li><strong>Statistiques</strong> sur le comportement de vos clients</li>
 	  </ul>
 
      </div>
@@ -39,7 +42,7 @@
 	<a class="buttonlink2 beautybutton" title="inscription" href="">Je m'inscris</a>
 
 </div>
-
+<!--
 <div class="optionblock">
      <div class="optiontitle">
 	<h2>Option Plus<br/>29€/mois</h2>
@@ -57,5 +60,5 @@
 	  </ul>
      </div>
 </div>
-
+-->
 {% endblock %}
